@@ -1,25 +1,41 @@
-@media (max-width: 600px){
+@media (max-width: 600px) {
+  .container {
+    margin-top: 45px;
+  }
+
+  .content {
+    margin-top: 35px;
+  }
+
   .header {
     flex-direction: column;
   }
-  .nav{
+
+  .nav {
     margin-left: 0px;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
   }
-  .nav-link{
+  .nav-link {
     margin-left: 0px;
   }
-  .subtitle{
+
+  .subtitle {
     font-size: 32px;
   }
+
   .title {
-    font-size: 56px;
+    font-size: 48px;
+    line-height: normal;
   }
+
   .description {
     font-size: 14px;
     max-width: 90%;
   }
 
+  .episodes-slider-item {
+    width: 85%;
+  }
 }

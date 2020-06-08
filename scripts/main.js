@@ -103,6 +103,7 @@ $(document).ready(() => {
 
   owl.owlCarousel({
     loop: true,
+    margin: 0,
     responsive: {
       0: {
         items: 1,
@@ -119,11 +120,11 @@ $(document).ready(() => {
     },
   });
 
-  $('.episodes-slider-nav-left').click(function () {
+  $('.episodes-slider-nav-left').click(() => {
     owl.trigger('prev.owl.carousel', [300]);
   });
 
-  $('.episodes-slider-nav-right').click(function () {
+  $('.episodes-slider-nav-right').click(() => {
     owl.trigger('next.owl.carousel', [300]);
   });
 });
