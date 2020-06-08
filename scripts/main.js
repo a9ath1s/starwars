@@ -73,20 +73,20 @@ $(document).ready(() => {
     };
 
     return `
-    <div class="slider-item">
-      <div class="slider-year">${year}</div>
-      <div class="slider-description">${subtitle}<br>${title}</div>
-      <div class="slider-rating">
-        <div class="slider-rating-text">Рейтинг</div>
-        <div class="slider-rating-stars">${parceRating(rating)}</div>
+    <div class="episodes-slider-item">
+      <div class="episodes-slider-year">${year}</div>
+      <div class="episodes-slider-description">${subtitle}<br>${title}</div>
+      <div class="episodes-slider-rating">
+        <div class="episodes-slider-rating-text">Рейтинг</div>
+        <div class="episodes-slider-rating-stars">${parceRating(rating)}</div>
       </div>
-      <img class="slider-image" src="${image}" alt="${title}">
+      <img class="episodes-slider-image" src="${image}" alt="${title}">
     </div>
     `;
   };
 
   const createSliderElements = (data) => {
-    const slider = $('.slider');
+    const slider = $('.episodes-slider');
     slider.innerHTML = '';
 
     for (let itr = 0; itr < data.length; itr++) {
@@ -97,9 +97,9 @@ $(document).ready(() => {
     }
   };
 
-  let owl = $('.owl-carousel');
-
   createSliderElements(episodes());
+
+  let owl = $('.owl-carousel');
 
   owl.owlCarousel({
     loop: true,
@@ -119,11 +119,11 @@ $(document).ready(() => {
     },
   });
 
-  $('.slider-nav-left').click(function () {
+  $('.episodes-slider-nav-left').click(function () {
     owl.trigger('prev.owl.carousel', [300]);
   });
 
-  $('.slider-nav-right').click(function () {
+  $('.episodes-slider-nav-right').click(function () {
     owl.trigger('next.owl.carousel', [300]);
   });
 });

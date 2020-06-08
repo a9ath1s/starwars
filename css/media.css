@@ -1,0 +1,25 @@
+@media (max-width: 600px){
+  .header {
+    flex-direction: column;
+  }
+  .nav{
+    margin-left: 0px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-link{
+    margin-left: 0px;
+  }
+  .subtitle{
+    font-size: 32px;
+  }
+  .title {
+    font-size: 56px;
+  }
+  .description {
+    font-size: 14px;
+    max-width: 90%;
+  }
+
+}

@@ -14,7 +14,9 @@ body {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  background: #070506 url('../img/main-bg.jpg') no-repeat right top;
+  background: #070506 url('../img/main-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
   color: #fff;
 }
 
@@ -27,8 +29,9 @@ body {
 
 .header {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
+
 .nav {
   margin-left: 56px;
 }
@@ -43,12 +46,14 @@ body {
 .content {
   margin-top: 78px;
 }
+
 .subtitle {
   font-family: ProximaNova, sans-serif;
   font-weight: 900;
   font-size: 40px;
   line-height: 100%;
 }
+
 .title {
   font-family: ProximaNova, sans-serif;
   margin-top: 5px;
@@ -56,6 +61,7 @@ body {
   font-size: 64px;
   line-height: 78px;
 }
+
 .description {
   margin-top: 25px;
   max-width: 572px;
@@ -63,12 +69,14 @@ body {
   line-height: 150%;
   color: #afafaf;
 }
+
 .premier {
   margin-top: 25px;
   font-size: 18px;
   line-height: 150%;
   color: #b02000;
 }
+
 .premier-date {
   margin-top: 5px;
   font-size: 24px;
@@ -76,6 +84,7 @@ body {
 }
 
 .button-play {
+  outline: none;
   position: relative;
   align-items: center;
   margin-top: 54px;
@@ -123,12 +132,13 @@ body {
   line-height: 150%;
 }
 
-.slider {
+.episodes-slider {
   margin-top: 24px;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
-.slider-item {
+
+.episodes-slider-item {
   position: relative;
   overflow: hidden;
   padding-left: 29px;
@@ -144,30 +154,32 @@ body {
   cursor: pointer;
   transition: all 300ms;
 }
-.slider-item:hover {
+.episodes-slider-item:hover {
   background-color: rgba(64, 101, 255, 0.86);
 }
 
-.slider-year {
+.episodes-slider-year {
   font-weight: normal;
 }
-.slider-description {
+
+.episodes-slider-description {
   margin-top: 5px;
-  width: 193px;
+  width: 90%;
   height: 80px;
   display: block;
 }
-.slider-rating {
+
+.episodes-slider-rating {
   display: flex;
   margin-top: 12px;
   align-items: center;
   font-weight: normal;
   font-size: 13px;
 }
-.slider-rating-text{
+.episodes-slider-rating-text{
   margin-right: 12px;
 }
-.slider-rating-stars{
+.episodes-slider-rating-stars{
   width: 68;
   display: flex;
   justify-content: space-between;
@@ -183,7 +195,7 @@ body {
   background: transparent url('../img/star-blank.png') no-repeat center;
 }
 
-.slider-image {
+.episodes-slider-image {
   position: absolute;
   left: 0;
   top: 0;
@@ -192,21 +204,21 @@ body {
   z-index: -1;
 }
 
-.slider-nav {
+.episodes-slider-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 78px;
   margin-left: 15px;
 }
-.slider-nav-left {
+.episodes-slider-nav-left {
   border: 0px;
   width: 34px;
   height: 34px;
   background: url('../img/slider-left-arrow.svg') no-repeat center;
   cursor: pointer;
 }
-.slider-nav-right {
+.episodes-slider-nav-right {
   border: 0px;
   width: 34px;
   height: 34px;
