@@ -6,56 +6,56 @@ $(document).ready(() => {
         subtitle: 'Эпизод IV',
         title: 'Новая надежда',
         rating: 82,
-        image: 'img/posters/04.new-hope.jpg',
+        image: 'img/posters/04.new-hope-tmb.jpg',
       },
       {
         year: '1980',
         subtitle: 'Эпизод V',
         title: 'Империя наносит ответный удар',
         rating: 84,
-        image: 'img/posters/05.the-empire-strikes-back.jpg',
+        image: 'img/posters/05.the-empire-strikes-back-tmb.jpg',
       },
       {
         year: '1983',
         subtitle: 'Эпизод VI',
         title: 'Возвращение джедая',
         rating: 80,
-        image: 'img/posters/06.return-of-the-jedi.jpg',
+        image: 'img/posters/06.return-of-the-jedi-tmb.jpg',
       },
       {
         year: '1999',
         subtitle: 'Эпизод I',
         title: 'Скрытая угроза',
         rating: 65,
-        image: 'img/posters/01.the-phantom-menace.jpg',
+        image: 'img/posters/01.the-phantom-menace-tmb.jpg',
       },
       {
         year: '2002',
         subtitle: 'Эпизод II',
         title: 'Атака клонов',
         rating: 65,
-        image: 'img/posters/02.attack-of-the-clones.jpg',
+        image: 'img/posters/02.attack-of-the-clones-tmb.jpg',
       },
       {
         year: '2005',
         subtitle: 'Эпизод III',
         title: 'Месть ситхов',
         rating: 82,
-        image: 'img/posters/03.revenge-of-the-sith.jpg',
+        image: 'img/posters/03.revenge-of-the-sith-tmb.jpg',
       },
       {
         year: '2015',
         subtitle: 'Эпизод VII',
         title: 'Пробуждение силы',
         rating: 74,
-        image: 'img/posters/07.the-force-awakens.jpg',
+        image: 'img/posters/07.the-force-awakens-tmb.jpg',
       },
       {
         year: '2017',
         subtitle: 'Эпизод VIII',
         title: 'Последние джедаи',
         rating: 70,
-        image: 'img/posters/08.the-last-jedi.jpg',
+        image: 'img/posters/08.the-last-jedi-tmb.jpg',
       },
     ];
   };
@@ -104,6 +104,7 @@ $(document).ready(() => {
   owl.owlCarousel({
     loop: true,
     margin: 0,
+    nav: false,
     responsive: {
       0: {
         items: 1,
